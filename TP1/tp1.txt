@@ -1,0 +1,72 @@
+1. Escreva um programa usando o módulo ‘os’ de Python que imprima o nome de usuário.
+
+import os
+
+print('O Nome de usuário atualmente conectado é:', os.getlogin())
+
+
+2. Sobre variáveis de ambiente, responda:
+
+a. O que são?
+
+Variaveis de ambiente são atalhos representados por valores que estão disponiveis para o sistema e aplicações em execução.
+https://cursos.alura.com.br/forum/topico-oque-e-afinal-de-contas-a-variavel-de-ambiente-39421
+
+b. Como elas podem ser obtidas pelo módulo ‘os’ de Python?
+
+import os
+
+print(os.environ)
+
+c. Como pode ser obtido o caminho completo do diretório de usuário em Python, através das variáveis de ambiente?
+
+import os
+
+print('O Nome do caminho completo do diretório de usuário em Python é:', os.environ['HOMEDRIVE'], os.environ['HOMEPATH'])
+
+
+3. Escreva um programa usando o módulo ‘os’ de Python que imprima o PID do próprio processo e também seu GID (identificador de grupo) caso seja sistema do tipo Linux.
+
+import os
+
+print('O PID do processo atual é:', os.getpid())
+
+4. Que função do módulo ‘os’ de Python é usada para obter o caminho absoluto de um diretório com caminho relativo? Dê um exemplo.
+
+5. Escreva um programa que indique se um arquivo existe ou não. Caso exista, indique se é realmente um arquivo ou não.
+
+6. Escreva um programa que indique a extensão de um arquivo usando função do módulo os.path.
+
+7. Escreva um programa que imprima apenas o caminho absoluto de um arquivo com nome relativo. A impressão não deve conter o nome do arquivo, apenas o caminho.
+
+8. Escreva um programa que mostre a quantidade de bytes (em KB) de cada arquivo em um diretório.
+
+9. Escreva um programa que mostre as datas de criação e modificação de cada arquivo em um diretório.
+
+10. Os comandos os.exec* e os.spawn* são bastante parecidos. No entanto, eles apresentam uma diferença em suas execuções. Aponte qual é está diferença.
+
+11. Escreva um programa que obtenha um nome de um arquivo texto do usuário e crie um processo, usando o módulo ‘os’, de bloco de notas (notepad) para abri-lo.
+
+12. Indique uma maneira de criar um processo externo ao seu programa usando o módulo ‘os’ e usando o módulo ‘subprocess’ de Python. Dê um exemplo de cada.
+
+13. Usando o módulo ‘subprocess’ de Python, crie um processo externo e imprima o PID dele.
+
+14. Explique a principal semelhança e a principal diferença entre os comandos psutil.pids e psutil.process_iter.
+
+15. A função psutil.process_iter() é equivalente a psutil.pids(). Ela retorna a lista de processos que estão executando na máquina. A diferença está na forma como é implementada, de modo que seja mais eficiente quando executado repetidamente (em iterações).
+
+16. Escreva uma função em Python que, dado um número PID, imprima o nome do usuário proprietário, o tempo de criação e o uso de memória em KB.
+
+17. Escreva um programa em Python, usando o módulo ‘psutil’, que imprima o tempo de CPU em segundos por núcleo.
+
+18. Escreva um programa em Python, usando o módulo ‘psutil’, que imprima 20 vezes, de segundo a segundo, o percentual do uso de CPU do computador.
+
+19. Escreva um programa em Python, usando o módulo ‘psutil’, que imprima em GB, quanto de memória principal e quanto de memória de paginação (swap) existem no computador.
+
+20. Escreva um programa em Python, usando o módulo ‘psutil’, que imprima em GB, quanto de armazenamento disponível há na partição do sistema (onde o sistema está instalado).
+
+Escreva um programa em Python usando o módulo ‘psutil’, que imprima para a partição corrente:
+o nome do dispositivo,
+o tipo de sistema de arquivos que ela possui (FAT, NTFS, EXT, ...),
+o total de armazenamento em GB e
+o armazenamento disponível em GB.
